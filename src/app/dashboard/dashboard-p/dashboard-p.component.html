@@ -1,0 +1,10 @@
+<p>
+  资源组件，看到我，证明你已经授权！
+</p>
+
+<a style="text-decoration: underline;color: deeppink;" (click)="getData()">数据Demo</a>
+
+<h3>这里显示数据：{{dataDemo| json}}</h3>
+
+<br>
+<a style="text-decoration: underline;color: #ff050f;" (click)="auth.logout()">取消授权</a>

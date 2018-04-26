@@ -1,0 +1,9 @@
+<p>
+登陆组件
+</p>
+<a *ngIf="isAuth" routerLink="/dashboard">进去资源</a>
+<br><br>
+<a *ngIf="!isAuth" style="text-decoration: underline;color: #ff9d89;" (click)="getToken()">授权</a>
+<br>
+<br>
+<a *ngIf="isAuth" style="text-decoration: underline;color: #ff050f;" (click)="auth.logout()">取消授权</a>
